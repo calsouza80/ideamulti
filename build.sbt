@@ -16,5 +16,11 @@ lazy val util = (project in file("util")).
     // other settings
   )
 
+lazy val newproj = (project in file("newproj")).
+  settings(commonSettings: _*).
+  settings(
+    // other settings
+  )
+
 lazy val root = (project in file(".")).
   aggregate(util, core)
